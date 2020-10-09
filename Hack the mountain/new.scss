@@ -164,6 +164,12 @@ body{
         color: white;
         opacity: 0.6;
         margin: 50px;
+
+        &:hover{
+
+            opacity: 1;
+            
+        }
     }
 
 }
