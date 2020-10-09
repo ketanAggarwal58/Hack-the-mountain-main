@@ -1,0 +1,93 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Playfair Display', serif; 
+    outline:none;
+    box-sizing: border-box;
+}
+body{
+    background: url('contact-us-4193523_1920.jpg') no-repeat center center/cover;
+    width:100%;
+    height:100vh;
+    z-index: -1;
+    font-size: 17px;
+}
+.container{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.contact-us{
+    width:100%;
+    max-width:500px;
+    height:auto;
+    background-color: rgba(0,0,0,0.4);
+    padding:40px 50px;
+    border-radius: 10px;
+}
+.title{
+    font-size: 2em;
+    line-height: 1.50em;
+    text-align: center;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color:black;
+    padding-bottom:15px;
+}
+.input-field{
+    padding:0 30px;
+}
+.input-field .items{
+    width:100%;
+    padding-bottom: 15px;
+}
+.input-field .items .label{
+    display:block;
+    font-size:1em;
+    font-family: 'Cinzel', serif;
+    color:rgb(183, 226, 97);
+    padding-bottom : 5px;
+}
+.input-field .items .input,
+.input-field .items .text-area{
+    text-transform: capitalize;
+    background: transparent;
+    border:0;
+    border:2px solid white;
+    width:100%;
+    padding:8px 10px;
+    font-size: 1em;
+    border-radius: 5px;
+}
+.items #message{
+    height:100px;
+} 
+.btn{
+    margin:0 30px;
+    background-color: rgb(183, 214, 121);
+    font-size:1.50em;
+    font-family: 'Playfair Display', serif; 
+    padding: 10px 0;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+.contact-us .link{
+    text-align: center;
+    margin-top: 5%;
+}
+.contact-us .link a{
+    color: seashell;
+    font-size: 20px;
+    font-family: 'Libre Baskerville', serif;
+
+    
+}
+@media screen and (max-width:750px){
+    .input-field{
+        padding:0;
+    }
+}
