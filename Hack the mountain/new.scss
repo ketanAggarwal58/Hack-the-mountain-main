@@ -1,0 +1,152 @@
+body{
+
+    font-family: 'Open Sans', sans-serif;
+    overflow: hidden;
+    background: linear-gradient(to bottom, rgba(0,0,0,.8), rgba(0,0,0,.5)), url("lib/img2.jpg");
+    height: 100vh;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+}
+
+.navbar{
+
+    width: 100%;
+    height: 90px;
+    display: flex;
+
+}
+
+.logo{
+
+    h1{
+
+        float: left;
+
+        a{
+
+            color: white;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-size: 1.8rem;
+            letter-spacing: 1px;
+            transform: translateX(-100rem);
+            font-weight: 300;
+            margin-left: 80px;
+            margin-top: 30px; 
+            cursor: pointer;
+            animation: slideIn .5s forwards;
+
+        }
+
+        span{
+
+            color: crimson;
+
+        }
+
+    }
+
+}
+
+.menu{
+
+    position: relative;
+    left: 50%;
+
+    ul{
+
+        float: right;
+
+        li{
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            list-style: none;
+            text-transform: uppercase;
+            margin: 10px;
+            margin-left: 20px;
+            margin-right: 30px;
+            font-size: 1.3rem;
+            cursor: pointer;
+            transform: translateX(100rem);
+            animation: slideIn .5s forwards;
+            font-weight: 300;
+            padding: 10px;
+
+            &:nth-child(1){
+                animation-delay: 0s;
+            }
+
+            &:nth-child(2){
+                animation-delay: 0.5s;
+            }
+
+            &:nth-child(3){
+                animation-delay: 1s;
+            }
+
+            &:last-child{
+
+                margin-right: 5px;
+
+            }
+
+            &::before{
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                background-color: crimson;
+                left: 0;
+                transform: scaleX(0);
+                transition: all .5s;
+                top: 0;
+                transform-origin: left;
+
+            }
+
+            &::after{
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                background-color: crimson;
+                left: 0;
+                transform: scaleX(0);
+                transition: all .5s;
+                bottom: 0;
+                transform-origin: right;
+
+
+            }            
+
+            &:hover::before{
+                transform: scaleX(1);
+            }
+
+            &:hover::after{
+                transform: scaleX(1);
+            }
+
+        }
+    }
+    
+}
+
+@keyframes slideIn {
+    from{
+
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+.container{
+    
+}
