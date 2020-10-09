@@ -7,7 +7,7 @@ html, body {
 
 body {
       color: #fff;
-      background: url(bg.jpg) no-repeat 50% 50%;
+      background: url(bg.jpg) no-repeat 50% 50% fixed;
       background-size: cover;
       overflow-x: hidden;
 }
@@ -58,4 +58,20 @@ body {
 .nav > button:focus {
       border: none;
       outline: none;
+}
+
+.about{
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      top: 140px;
+
+}
+
+.about span{
+
+      color: black;
+
 }
